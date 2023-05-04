@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="if.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script> // 논리식으로 작성되는것이 좋다. 
+    let age = 8;
+    if(age>=20){
+        console.log("성인");
+    }else if(age>=17 && age<20){
+        console.log("고등학생");
+    }else if(age>=14 && age<17){
+        console.log("중학생");
+    }else if(age>=8 && age<14){
+        console.log("초등학생");
+    }else if(age>0 && age<8){
+         console.log("유아");
+    }else{
+        alert("음수가 입력되었습니다");
+    }
+    // avar let const
+    // console.leg(); alert();
+    console.log(typeof(null));
+    console.log(typeof(true));
+
+    // 사용자로부터 데이터를 입력받는 함수
+    const pmt = prompt("입력하세요");
+    console.log(pmt);
+
+    let pmt1 = prompt("숫자를 입력하세요");
+    if(Number(pmt1)%2===0){
+        console.log("짝수입니다")
+    }else{
+        console.log("홀수입니다");
+    }
+    // Number(pmt1) % 2 == 0 ? console.log("짝수입니다"): console.log("홀수입니다."); 
+    // console.log(pmt1);
+
+    function rectangle(width,height){
+        return width*height;
+    }
+    function triangle(width,height){
+        return width*height/2;
+    }
+    function circle(r){
+        return r**2*3.14; // 제곱의 다른코드
+    }
+    console.log(rectangle(10,5));
+    console.log(triangle(10,5));
+    console.log(circle(5));
+
+    
+
+    </script>
+    
+    
+</body>
+</html>

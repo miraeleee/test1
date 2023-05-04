@@ -1,0 +1,10 @@
+div{
+   display: flex;
+    justify-content: center; 
+}
+.img-box{
+    width: 300px;
+}
+.text-cener{
+    text-align:center;
+}

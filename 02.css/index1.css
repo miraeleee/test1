@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+html{/*태그선택자 html 등 태그를 적는것*/
+    font-family:'Noto Sans KR', sans-serif;
+    font-size: 20px; /*전체에 적용하는선택자*/
+}
+body{
+    font-size: 2em;
+}
+#hello{
+    /* color: blue; */
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgb(56, 39, 56);
+}
+/*contain : 이미지가 잘리거나 찌그러지지 않는한도내에서 제일 크게 설정됨*/
+/* cover 이미지가 찌그러지지않는 한도 내에서 제일 크게 서정된다.
+         이미지의 가로,세로비가 요소와 다르다면 이미지를 세로 또는 가로방향으로 
+          잘라내어 빈 공간이 생기지 않도록 설정한다.*/
+#back { 
+    background-image:url("https://image.utoimage.com/preview/cp873452/2023/04/202304014067_206.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    overflow:auto;
+    height:100%;
+    color:white;
+    text-align:center;
+}
+
+#hi{ /*폰트는 위에 3개를 보통 많이 사용함*/
+    color: white;
+    font-weight:900;
+    font-style:italic;
+    font-size:2rem;/* %, px> 고정, em > 기본*n*body폰트 rem > 기본html*n(자주사용)*/
+    /* font-family:https://fonts.google.com/noto/specimen/Noto+Sans+KR; 폰트중에 가장 중요한 의미, 폰트지정 */
+}
+ #border{
+    width: 400px;
+    height: 400px;
+    /* border: 4px solid #000색상 6자리 같으면 3자리만해도됨; */
+    border-width: 10px;
+    border-color: brown;
+    border-style: dashed;
+    border-bottom: 10px solid olivedrab;
+    background-color: yellow;
+    margin: 10px; 
+    padding: 10px;  
+    font-size: 16px;
+ }

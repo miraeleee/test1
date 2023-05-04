@@ -1,0 +1,109 @@
+html{
+    font-size: 16px;   
+}
+.box{
+    margin-bottom: 100px;
+}
+.px{
+    width: 100px;
+    height: 100px;
+    background-color: palegoldenrod;
+}
+.per-parent{
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+    position: relative;
+}
+.per-child{
+    width: 50%;
+    height: 50%;
+    background-color: palegreen;
+    position: absolute;
+    bottom: 0px;
+}
+.em{
+    font-size: 2em;
+}
+.rem{
+    font-size: 2rem;
+}
+.vw{
+    width: 20vw;
+    height: 30vw;
+    background-color: coral;
+   
+}
+.vh{
+    height: 20vh;
+    width: 30vh;
+    background-color: skyblue;
+}
+/* css,변수를 정의하는법 >>  -- 변수명 : 선언된것
+    보통 이형태는, 변수이용할떄, root에 넣고 이 형태로 사용가능함. 전역변수임
+    일반태그에 사용되는경우, 공용으로 사용되지않아서 아래와같은 방법은 잘 사용하지않는다.
+    // 일괄 변경할떄 쉽게 수정하기 위함. 보통 색상을 많이 넣음  */
+
+:root {
+    --color-primary : #1FAECE;
+    --height-header : 100px;
+    --dark: #000000;
+}
+.my-div {
+    background-color: var(--color-primary);
+    width: 200px;
+    height: var(--height-header);
+}
+.dark {
+    background-color: var(--dark);
+    width: 200px;
+    height: var(--height-header);
+}
+.p {
+    width: 100px;
+    height: 100px;
+    background-color: var(--dark);
+}
+    /* // div태그에 걸면, 사용되지 않는다.  */
+
+
+li{
+    color: var(--color,blue);
+}
+#media{
+    background-color: aqua;
+    width: 100%;
+    height: 100px;
+}
+    .parent {
+        display:flex;/*부모가 flex여아 자식이 inline일수있다?*/
+    }
+    .child {
+        width: 30px;
+        height: 30px;
+        background-color: blue;
+        margin:5px;
+        border: 1px solid red
+    }
+
+    @media(min-width: 746px)and(max-width: 1024px){ 
+        #media{
+            background-color: rgb(235, 135, 233);
+            width: 100px;
+            height: 100px;
+        }
+    }
+    @media (max-width: 700px) {
+        .parent {
+            flex-direction: row; 
+            display:block
+        }
+        .child {
+            background-color: aqua;
+        }
+    }
+    .logo{
+        background-color: purple
+    }
+    
+

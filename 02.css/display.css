@@ -1,0 +1,25 @@
+.inline {
+    display: inline-block;
+    height: 100px;
+}
+.block {
+    display: block;
+}
+
+.flex_box {
+    display: flex;
+    justify-content: space-around;
+    align-items:end;
+    height: 100px;
+    flex-direction: row; /*방향바꾸는속성 행의 기본(오 > 왼)*/
+    /*flex-direction: column-reverse 열의 역순(하 > 상)*/
+    justify-content:flex-end;  /*추축 끝을 기준으로 배치*/
+    /* justify-content:center; // 중앙으로 배치
+    justify-content:space-bltween;// 바깥쪽 여백없고, 요소사이에 간격이있음
+    justify-content:space-evenly; // 요소의 동일한 여백을 주는것 */
+}   
+.flex_box div{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}

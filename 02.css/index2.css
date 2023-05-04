@@ -1,0 +1,55 @@
+.backIn{
+    color: white
+}
+.orange {
+    color: violet;
+ }
+
+div li{ /*하위선택자(가장많이 사용) > 자식선택자 순*/
+color: red;
+}
+ 
+div span{ /*div > span도 여러개면 가능*/
+    font-weight: bold;
+}
+
+p ~ span{/*p의 형제인 sapn을 의미, 자주사용되지는 않음*/
+    color: red;
+} /*+이면 인접형제만, ~이면 모든형제에 해당*/
+
+/*hover: 요소에 마우스가 올라가있을경우 선택
+active: 요소에 마우스 클릭 또는 키보드 엔터가 눌리는 동안 선택
+vistited: a태그에만 사용가능*/
+#click:hover{
+    color: blueviolet;
+    font-size: 30px;
+}
+a:visited{
+    color:blue;
+}
+
+.fruits span:first-child{
+    color: red;
+}
+.fruits h3:last-child{
+    color: violet;
+}
+.list span :nth-child(even){ /*원하는것 선택,홀(odd)짝(Even) 자주사용*/
+    border: 1px solid blue;
+    padding: 5px;
+}
+.list span :nth-child(odd){ /*원하는것 선택,홀(odd)짝(Even) 자주사용*/
+    border: 1px solid red;
+    padding: 5px;
+}
+.frunts *:not(span){
+    font-size: 5px;
+}
+
+
+.month{
+    color: red;
+}
+.blue{
+    color:blue ;
+}

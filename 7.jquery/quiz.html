@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>시간의 바깥 - IU</h2>
+        <div>
+          서로를 <span>감</span>아 포개어진 <span>삶</span><br />
+          그들을 <span>가</span>만 내려보는 <span>달</span><br />
+          여전히 <span>많</span>아 하고 싶은 <span>말</span><br />
+          우리 좀 <span>봐</span> 꼭 하나 같<span>아</span><br />
+        </div>
+      </div>
+      <script>
+        /*
+        const spans = document.querySelectorAll('span')
+        const cont = document.querySelector('.container')
+        for( let span of spans) {
+            span.style.color = "blueviolet"
+            span.style.fontWeight = 700
+        }
+        cont.style.textAlign = 'center'
+        cont.style.backgroundColor = '#eee'
+        */
+       const spans = $('span')
+       for( let span of spans) {
+         $('span').css({"color": "blueviolet", "font-weight": "700"})
+       }
+       $(".container").css({'text-align':'center', 'background-color': '#eee'})
+
+        const pringMsg = (msg) =>{
+            console.log(msg.toUpperCawse())
+            console.log(msg.toUpperCawse())
+            console.log(msg.toUpperCawse())
+        }
+        const whatDay = (day)=>{
+            if(day===1){
+                return '월'
+            }else if(day===2){
+               return '화'
+            }else if(day===3){
+               return '수'
+            }else if(day===4){
+               return '목'
+            }else if(day===5){
+               return '금'
+            }else if(day===6){
+               return '토'
+            }else if(day===7){
+               return '일'
+            }else{
+                return null;
+            }
+        }
+        function diceNumber(first, second) {
+            if( typeof(first) ==='number' && typeof second === 'number') {
+                const result = first + second
+                if( result % 4 === 0) {
+                    return '4의 배수'
+                } else {
+                    return '4의 배수가 아님'
+                }
+            } else {
+                return 'Not a Number'
+            }
+        }
+
+        // slice() split()자주 사용함
+        //const str ='Hello World' 
+        // 위 객체기때문에 배열처럼 str[3]처럼 접근 가능함
+        //const url = 'https://www.blabla.com?id=hello&name=martin'
+        // console.log(str.slice(-1))
+        //const arr = [1, 2, 'hi',4, 6, 3, 5, 'abc']
+        // console.log(arr.slice(2,-1))
+        // console.log(str.split(' '))
+        // const split1 = url.split('id=')
+        // console.log(split1)
+        // console.log(split1[1].split('&'))
+        //console.log(arr.sort()) // 순서정렬, 문자정렬도 가능
+        //console.log(arr.splice(2,5)) //시작점을 가지고, 시작점제외 끝자리영향
+        //console.log(arr.slice(2,5)) // 시작점을 가지고,, 시작점포함 끝자리영향
+
+
+        const firstLetterBig = (str) => {
+            return str[0].toUpperCawse() + str.slice(1)
+        }
+
+    
+        
+        
+        
+     </script>
+
+      
+</body>
+</html>

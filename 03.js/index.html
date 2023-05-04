@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log("안녕하세요")
+        //alert("반갑습니다")
+        // vat개념
+        var kdt = "안녕하세요";
+        console.log(kdt);  
+        kdt = "반갑습니다";
+        console.log(kdt);  
+        var kdt =10;
+        console.log(kdt); 
+        
+        // let 개념
+        let test = 23;
+        console.log("test:",test);
+        test =30;
+        console.log('test:',test);
+        // let test = 50; 이름중복불가
+
+        // const 개념
+        const value = 10;
+        console.log('value:',value);
+        // value = 20;
+
+        // 자료형
+        console.log(typeof("안녕하세요"));
+        console.log(typeof(234));
+        console.log(typeof(-234));
+        console.log(typeof(false));
+        console.log(typeof(null));
+        console.log(typeof({}));
+        console.log(typeof([]));
+
+        // 형변환
+        const check = true;
+        console.log("check:",typeof(check));
+        console.log("check:",typeof(true.toString()));
+        console.log("check:",typeof(Number("23")));
+        console.log("number:",typeof(parseInt('2002')));
+        // console.log(String(true));
+
+        var text = "안녕하세요";
+        var num = 222;
+        var bool = false;
+        var nul = null;
+
+        var obj ={
+            name: "mirae",
+            born: "서울",
+            age: 20,
+            move: function(){
+                return "퇴근";
+            }
+        }
+        console.log(obj);
+        console.log(obj.age);
+        console.log(obj.move());
+
+        var ar = [1,2,3,"안녕하세요","반갑습니다"]; // 배열
+        var arr2 = new Array(1,2,3,"안녕하세요","반갑습니다");
+        console.log(arr2);
+        console.log(ar[3]);        
+
+        console.log("1=1:", 1 == "1");
+        console.log("1!=1:",1!="1");
+        console.log("===",1==="1");
+        console.log("!==:",1!=="1");
+        console.log(10/3);
+        console.log(10%3);
+        console.log(10%2 === 0);
+        console.log(!false);
+        console.log(true && false);
+        console.log(true || false);
+
+        //삼항연산자
+        const a = 10;
+        const b = 20;
+        const c = 30;
+        a < b ? a > c ?console.log("참입니다") : console.log("거짓입니다1") : console.log("거짓입니다");
+
+        // 단축실행
+        a < b && console.log("참입니다.");
+        // 참일때만 실행, 거짓일때는 출력되지않는다. 
+        
+        function test(a){
+            const obj = {
+                name : a || null
+            }
+            console.log(obj.name)
+        }
+        test("이름") // ()이 참이면 a출력 아니면, null을 출력
+        test()
+        
+        console.log(typeof(0));
+        console.log(typeof(false));
+    </script>
+</body>
+</html>
